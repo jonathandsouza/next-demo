@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
+import React from 'react'
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+	return (
+		<>
+			<Component {...pageProps} />
+
+			<Script src="https://www.googletagmanager.com/gtm.js?id=GTM-55NRC96" />
+		</>
+	)
 }
 export default MyApp
