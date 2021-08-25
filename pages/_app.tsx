@@ -4,6 +4,8 @@ import React from 'react'
 import Script from 'next/script'
 
 function MyApp({ Component, pageProps }: AppProps) {
+	console.log('nice')
+
 	return (
 		<>
 			<Component {...pageProps} />
